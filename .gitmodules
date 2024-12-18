@@ -1,0 +1,3 @@
+[submodule "cyber-history/smiley-face/cyber-history/smiley-face/vsftpd-2.3.4-infected"]
+	path = cyber-history/smiley-face/cyber-history/smiley-face/vsftpd-2.3.4-infected
+	url = https://github.com/nikdubois/vsftpd-2.3.4-infected.git
