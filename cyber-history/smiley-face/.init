@@ -1,6 +1,8 @@
 #!/bin/sh
 
 # Compile vsftpd
+mkdir /usr/local/man/man5
+mkdir /usr/local/man/man8
 cd /challenge/vsftpd-2.3.4 && make && make install
 
 # Run vsftpd
