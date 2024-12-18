@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd vsftpd-2.3.4 && make > /home/hacker/build.log
+cd /challenge/vsftpd-2.3.4 && make > /home/hacker/build.log
 chown hacker /home/hacker/build.log
