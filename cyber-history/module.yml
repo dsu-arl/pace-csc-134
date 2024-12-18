@@ -1,0 +1,5 @@
+name: Cyber History
+challenges:
+- id: smiley-face
+  name: Smiley Face
+  allow_privileged: false
