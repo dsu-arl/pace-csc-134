@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cd vsftpd-2.3.4-infected && make
+cd vsftpd-2.3.4 && make
