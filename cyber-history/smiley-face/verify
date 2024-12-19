@@ -1,20 +1,28 @@
 #!/opt/pwn.college/python
 import sys
+import subprocess
 sys.path.append('/challenge')
 
 def print_instructions():
     print("""
     In this challenge, you will exploit a vulnerability in version 2.3.4 of vsFTPd, otherwise known as the
     'smiley face' vulnerability. The FTP server should now be running. You can verify that is running by
-    running the 'ss -antop' command and looking for something like '127.0.0.1:21' or '0.0.0.0:21', which
+    running the 'ss -antop' command and looking for something like '127.0.0.1:21', which
     indicates that the server is listening on TCP port 21.
 
     After you've verified that, use the 'nc' command (netcat) to connect to the server:
           nc 127.0.0.1 21
 
-    TODO: Add rest of instructions
+    Type 'USER test:)' and press enter. Notice the ':)' added to the end of the 'test' username.
+    When it asks for a password, type 'PASS test' (the password can be anything).
+
+    Then, in a new terminal, use the 'nc' command again to connect to port 6200, which should give you a root shell.
+        nc 127.0.0.1 6200
 
     """)
+
+def start_vsftpd():
+    subprocess.Popen(["vsftpd", "/challenge/vsftpd-2.3.4/vsftpd.conf"])
 
 def print_flag():
 	try:
@@ -23,4 +31,9 @@ def print_flag():
 	except FileNotFoundError:
 		print("Error: Flag file not found.")
 
-# Add your imports and other code below here
+def main():
+    start_vsftpd()
+    print_instructions()
+
+if __name__ == "__main__":
+    main()
