@@ -23,8 +23,7 @@ def print_instructions():
 
 def start_vsftpd():
     config_path = "/challenge/vsftpd-2.3.4/vsftpd.conf"
-    subprocess.Popen(["ls", "-l", config_path])
-    subprocess.Popen(["vsftpd", config_path])
+    subprocess.Popen(["sudo", "vsftpd", config_path])
 
 def print_flag():
 	try:
