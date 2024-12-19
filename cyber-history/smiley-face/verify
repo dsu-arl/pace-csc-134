@@ -22,7 +22,9 @@ def print_instructions():
     """)
 
 def start_vsftpd():
-    subprocess.Popen(["vsftpd", "/challenge/vsftpd-2.3.4/vsftpd.conf"])
+    config_path = "/challenge/vsftpd-2.3.4/vsftpd.conf"
+    subprocess.Popen(["ls", "-l", config_path])
+    subprocess.Popen(["vsftpd", config_path])
 
 def print_flag():
 	try:
