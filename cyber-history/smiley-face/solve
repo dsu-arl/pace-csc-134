@@ -20,10 +20,18 @@ def print_instructions():
     Then, in a new terminal, use the 'nc' command again to connect to port 6200, which should give you a root shell.
         nc 127.0.0.1 6200
 
+    Type 'whoami' to verify that you are the root user. It should show 'root'.
+
+    Congratulations! You have now exploited the vulnerability and can run commands as the root user, which means
+    you can read the flag yourself!
+
+    Inside the root shell, run 'cat /flag' to get your flag!
+        cat /flag
+
     """)
 
 def start_vsftpd():
-    # Try becoming root user
+    # Become root user to run vsftpd
     os.setuid(0)
 
     config_path = "/challenge/vsftpd-2.3.4/vsftpd.conf"
