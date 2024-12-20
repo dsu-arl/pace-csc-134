@@ -1,4 +1,5 @@
 #!/opt/pwn.college/python
+import os
 import sys
 import subprocess
 sys.path.append('/challenge')
@@ -22,8 +23,11 @@ def print_instructions():
     """)
 
 def start_vsftpd():
+    # Try becoming root user
+    os.setuid(0)
+
     config_path = "/challenge/vsftpd-2.3.4/vsftpd.conf"
-    subprocess.Popen(["sudo", "vsftpd", config_path])
+    subprocess.Popen(["vsftpd", config_path])
 
 def print_flag():
 	try:
