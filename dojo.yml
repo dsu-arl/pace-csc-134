@@ -3,3 +3,5 @@ name: CSC 134
 modules:
 - id: cyber-history
   name: Cyber History
+- id: osint
+  name: OSINT

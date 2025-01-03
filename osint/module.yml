@@ -1,0 +1,4 @@
+name: OSINT
+challenges:
+- id: socialmediapassword
+  name: Social Media Password
