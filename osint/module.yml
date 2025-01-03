@@ -1,0 +1,5 @@
+name: OSINT
+challenges:
+- id: google-dorks
+  name: Google Dorks
+  allow_privileged: false
