@@ -44,7 +44,7 @@ def main():
     if ('rob' in answer or 'robert' in answer) and 'scott' in answer:
         print("That is correct!")
         dork = input("\nWhat is the Google dork that you used? ")
-        if "site:dsu.edu" in dork and "\"Richardson\"" in dork:
+        if "site:dsu.edu" in dork and "\"richardson\"" in dork.lower():
             print("That is correct! An ideal dork for this search would be:")
             print("\tsite:dsu.edu \"Richardson\" AND \"Department\"")
             print("This would search dsu.edu for the name 'Richardson' and look for the text 'Department' to filter out 'Richardson Hall'")
