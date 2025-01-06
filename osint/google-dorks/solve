@@ -40,8 +40,8 @@ def print_flag():
 def main():
     print_instructions()
 
-    answer = input("What are the first names of the two professors at DSU with the last name 'Richardson'? ")
-    if ("Scott" in answer or "scott" in answer) and ("Rob" in answer or "rob" in answer or "Robert" in answer or "robert" in answer):
+    answer = input("What are the first names of the two professors at DSU with the last name 'Richardson'? (any order, space separated) ").lower()
+    if ('rob' in answer or 'robert' in answer) and 'scott' in answer:
         print("That is correct!")
         dork = input("\nWhat is the Google dork that you used? ")
         if "site:dsu.edu" in dork and "\"Richardson\"" in dork:
@@ -52,6 +52,8 @@ def main():
             print_flag()
         else:
             print("Ope, that's not quite right. Try again.")
+    else:
+        print("Ope, that's not quite right. Try again.")
 
 
 if __name__ == "__main__":
