@@ -1,4 +1,8 @@
 name: OSINT
 challenges:
+- id: google-dorks
+  name: Google Dorks
+  allow_privileged: false
 - id: socialmediapassword
   name: Social Media Password
+  allow_privileged: false
