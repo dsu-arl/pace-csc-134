@@ -1,5 +1,7 @@
 id: csc-134
 name: CSC 134
+type: hidden
+password: IntroToCyber
 modules:
 - id: cyber-history
   name: Cyber History
