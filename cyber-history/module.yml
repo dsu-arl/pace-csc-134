@@ -1,0 +1,6 @@
+name: Cyber History
+challenges:
+- id: smiley-face
+  name: Smiley Face
+- id: iloveyou-virus
+  name: ILOVEYOU Virus

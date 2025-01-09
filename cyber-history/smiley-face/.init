@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Compile vsftpd
+mkdir /usr/local/man/man5
+mkdir /usr/local/man/man8
+cd /challenge/vsftpd-2.3.4 && make && make install
+
+# Dependencies to get things working properly
+mkdir -p /usr/share/empty
+chmod 755 /usr/share/empty
+
+# Run vsftpd
+vsftpd /challenge/vsftpd.conf &disown
