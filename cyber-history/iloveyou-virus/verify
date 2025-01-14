@@ -1,0 +1,78 @@
+#!/opt/pwn.college/python
+
+import time
+import sys
+from os import system
+
+def p(text, color):
+    color_codes = {
+        "red": "\033[91m",
+        "green": "\033[92m",
+        "yellow": "\033[93m",
+        "blue": "\033[94m",
+        "magenta": "\033[95m",
+        "cyan": "\033[96m",
+        "white": "\033[97m",
+        "reset": "\033[0m"
+    }
+    sys.stdout.write(color_codes.get(color, ""))
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+    sys.stdout.write(color_codes["reset"])
+
+
+p("1. What country did the code originate in?\n", "blue")
+p("\ta. Costa Rica\n", "blue")
+p("\tb. Phillipines\n", "blue")
+p("\tc. United States\n", "blue")
+p("\td. Mexico\n", "blue")
+ans = input("> ")
+if ans.lower().strip() != 'b':
+    p("That's incorrect! Try again!\n", "red")
+    exit(0)
+else:
+    p("Correct!\n\n", "green")
+
+
+p("2. How was the virus transmitted?\n", "blue")
+p("\ta. E-Mail attachment\n", "blue")
+p("\tb. USB stick drop\n", "blue")
+p("\tc. Had to be planted manually\n", "blue")
+p("\td. AOL Chat\n", "blue")
+ans = input("> ")
+if ans.lower().strip() != 'a':
+    p("That's incorrect! Try again!\n", "red")
+    exit(0)
+else:
+    p("Correct!\n\n", "green")
+
+
+p("3. How was the virus executed?\n", "blue")
+p("\ta. It executed when the email was read\n", "blue")
+p("\tb. It executed as soon as it was downloaded\n", "blue")
+p("\tc. It executed by itself without any user interaction\n", "blue")
+p("\td. The users had to execute it themselves\n", "blue")
+ans = input("> ")
+if ans.lower().strip() != 'd':
+    p("That's incorrect! Try again!\n", "red")
+    exit(0)
+else:
+    p("Correct!\n\n", "green")
+
+
+p("4. What file extension was appended to the end that users couldn't see?\n", "blue")
+p("\ta. .vsb\n", "blue")
+p("\tb. .vbs\n", "blue")
+p("\tc. .csv\n", "blue")
+p("\td. .TXT\n", "blue")
+ans = input("> ")
+if ans.lower().strip() != 'b':
+    p("That's incorrect! Try again!\n", "red")
+    exit(0)
+else:
+    p("Correct!\n\n", "green")
+
+with open('/flag', 'r') as fObj:
+    p(fObj.read().strip(), "purple")
