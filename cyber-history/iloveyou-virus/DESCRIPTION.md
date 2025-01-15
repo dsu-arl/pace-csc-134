@@ -16,7 +16,7 @@ Then, the virus would copy the users outlook contact list and send the same 'ILO
 
 Start the challenge in Desktop mode, then open a terminal and run `/challenge/run`. Navigate to 'http://127.0.0.1:5000' and click through the buttons to see pictures of the virus in action.
 
-Then run `/challenge/verify` and answer the questions about the virus to get the flag!
+Then run `verify` and answer the questions about the virus to get the flag!
 
 More resources on the LOVEBUG:
 - https://www.techtarget.com/searchsecurity/definition/ILOVEYOU-virus
