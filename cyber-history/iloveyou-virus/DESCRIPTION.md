@@ -14,7 +14,7 @@ This script would then execute on their system and cause a lot of damage!
 The virus would overwrite random files on the system, destroying valuable documents.
 Then, the virus would copy the users outlook contact list and send the same 'ILOVEYOU' email to all of them! This allowed it to propogate exponentially!
 
-Start the challenge in Desktop mode, then open a terminal and run `/challenge/run`. Navigate to 'http://127.0.0.1:3000' and click through the buttons to see pictures of the virus in action.
+Start the challenge in Desktop mode, then open a terminal and run `/challenge/run`. Navigate to 'http://127.0.0.1:5000' and click through the buttons to see pictures of the virus in action.
 
 Then run `/challenge/verify` and answer the questions about the virus to get the flag!
 
