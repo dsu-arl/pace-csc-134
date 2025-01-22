@@ -1,1 +1,1 @@
-Write your dojo description here.
+All content in this Dojo was created by Dakota State University. 
