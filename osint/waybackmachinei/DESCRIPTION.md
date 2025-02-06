@@ -10,37 +10,14 @@ The Wayback Machine has sites archived from 1996 all the way up to our current d
 
 # How To Use
 
-## First, browse to web.archive.org.
-
-You will find a page that looks like this:
-
-![wayback landing page](wayback_search.png)
-
-## Second, enter a website URL into the search.
-
-This is what the result page will look like (notice you can select a year at the top):
-
-![wayback search results](wayback_dsu_results.png)
-
-## Third, select a year, month, and a day.
-
-When you hover your mouse over a dot, it'll display the time of day that the site was archived:
-
-![wayback snapshot select](wayback_dsu_snapshot_select.png)
-
-## Fourth, click the time in the selection.
-
-It will take you to the archived website from that year, day, and time.
-
-![wayback dsu webpage result](wayback_dsu_webpage_result.png)
-
-Now you can see what `dsu.edu` looked like on February 28th, 2008! Not only that, but you can browse it as normal and the pages should display (if they are archived)!
-
-Here is what happens if you click on the `Why DSU?` link:
-
-![wayback why dsu](wayback_why_dsu.png)
-
-This is what it would've been like to browse this site in 2008.
+1. Browse to web.archive.org.
+2. Enter a website URL into the search bar. For testing you can do `dsu.edu`
+	* Once the results are displayed, you should see a calendar with each month and day, as well as a selector above that to pick the year.
+3. Select a year, month, and a day.
+	1. Click a black bar within any of the years (the black bar means there is archived data for that year).
+	2. Find a month that has blue or green dots on some of the days, and hover over it. It should display times that snapshots were taken of the webpage. 
+4. Click a time in the selection to load that archived version of the webpage.
+5. Browse the webpage as normal!
 
 # Conclusion
 
