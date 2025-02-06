@@ -6,3 +6,6 @@ challenges:
 - id: socialmediapassword
   name: Social Media Password
   allow_privileged: false
+- id: waybackmachinei
+  name: Wayback Machine I
+  allow_privileged: false
