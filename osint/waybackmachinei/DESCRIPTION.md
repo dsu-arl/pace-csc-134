@@ -14,7 +14,7 @@ The Wayback Machine has sites archived from 1996 all the way up to our current d
 
 You will find a page that looks like this:
 
-<img src=wayback_search.png> 
+<img src=./wayback_search.png> 
 
 ## Second, enter a website URL into the search.
 
