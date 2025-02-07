@@ -4,7 +4,7 @@ The internet is a great place to find information on basically anything. That al
 
 You know how people say, "if it's on the internet, it's forever." Whether that's true or not is up for debate, but we should treat it as if it is true, because functionally it is. Tools like `The Wayback Machine` at `web.archive.org` have made it their goal to `archive` the entire internet. This is done imperfectly and doesn't preserve every website at every moment of history, but they have archived over 916 billion web pages, spanning decades, since the project started. 
 
-Tools like the Wayback Machine are useful to us when we are trying to find certain information that may not necesarrily exist on a website anymore. For example, maybe you want to reread a blog post from an old website that has since been changed. If that old site was archived by the Wayback Machine you can look up the URL, and select the proper year and month, and actually view that blog post from that point in time (assuming it was archived). 
+Tools like the Wayback Machine are useful to us when we are trying to find certain information that may not necessarily exist on a website anymore. For example, maybe you want to reread a blog post from an old website that has since been changed. If that old site was archived by the Wayback Machine you can look up the URL, and select the proper year and month, and actually view that blog post from that point in time (assuming it was archived). 
 
 The Wayback Machine has sites archived from 1996 all the way up to our current day. This means there exists a wide breadth of data for us to potentially find information we need.
 
